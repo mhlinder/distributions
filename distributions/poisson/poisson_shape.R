@@ -13,6 +13,7 @@ for (i in 1:3) {
 
 axis(1)
 axis(2)
+title(xlab="x", ylab="p(x)")
 legend("topright", "lambda", lambdas, pch=pchs, title=expression(lambda))
 
 dev.off()
