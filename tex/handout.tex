@@ -3,7 +3,7 @@
 \usepackage{graphicx,amsmath}
 
 \title{Probability Distributions}
-\author{M. Henry Linder}
+\author{}
 \date{}
 
 \begin{document}
@@ -11,10 +11,11 @@
 
 \section{Binomial Distribution}
 \begin{figure}
-    \includegraphics[width=\textwidth]{../distributions/poisson/poisson_bw.pdf}
     \caption{Binomial Distribution}
+    \centering
+    \includegraphics[width=.70\textwidth]{../distributions/binomial/binomial_bw.pdf}
 \end{figure}
-\marginnote[-4.0in]{
+\marginnote[-3.0in]{
     \begin{align*}
         & X \sim \text{Binomial} (n, p) \\
         & x = 0, 1, 2, \dots, n \\
@@ -24,14 +25,14 @@
         & \sigma^2 = E[(x-\mu)^2] = np(1-p) \\
     \end{align*}
 }
-\newpage
 
 \section{Poisson Distribution}
 \begin{figure}
-    \includegraphics[width=\textwidth]{../distributions/poisson/poisson_bw.pdf}
     \caption{Poisson Distribution}
+    \centering
+    \includegraphics[width=.70\textwidth]{../distributions/poisson/poisson_bw.pdf}
 \end{figure}
-\marginnote[-4.0in]{
+\marginnote[-3.0in]{
     \begin{align*}
         & X \sim \text{Poisson} (\lambda) \\
         & x = 0, 1, 2, \dots \\
@@ -39,6 +40,27 @@
         & p(x) = \frac{e^{-\lambda}\lambda^x}{x!} \\
         & \mu = E[X] = \lambda \\
         & \sigma^2 = E[(x-\mu)^2] = \lambda \\
+    \end{align*}
+}
+
+\newpage
+
+\section{Normal Distribution}
+\begin{figure}
+    \caption{Normal$(0,1)$ Distribution}
+    \centering
+    \includegraphics[width=.70\textwidth]{../distributions/normal/normal_bw.pdf}
+\end{figure}
+\marginnote[-3.0in]{
+    \begin{align*}
+        & X \sim \text{Normal} (\mu, \sigma^2) \\
+        & -\infty < x < \infty \\
+        & -\infty < \mu < \infty \\
+        & \sigma^2 > 0 \\
+        & p(x) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left[-\frac{(x
+            -\mu)^2}{2\sigma^2} \right] \\
+        & \mu = E[X] = \mu \\
+        & \sigma^2 = E[(x-\mu)^2] = \sigma^2 \\
     \end{align*}
 }
 
